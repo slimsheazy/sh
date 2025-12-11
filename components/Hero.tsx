@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import flowerAsset from '../assets/images/flowerasset.jpg';
+import bearAsset from '../assets/images/bearasset.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -8,8 +10,7 @@ export const Hero: React.FC = () => {
       {/* Decorative Flower Sticker */}
       <div className="absolute top-[15%] right-[5%] z-30 pointer-events-auto">
          <img 
-            src="https://raw.githubusercontent.com/slimsheazy/sh/12296d68dd3863f40b85ce72e2e946e37a11f306/assets/images/flowerasset.jpg" 
-            alt="Mystical Flower" 
+              src={flowerAsset}            alt="Mystical Flower" 
             className="w-24 md:w-40 h-auto object-contain rotate-12 drop-shadow-2xl
                        filter grayscale contrast-[1.2] brightness-90
                        transition-all duration-700 ease-out cursor-help
@@ -43,8 +44,7 @@ export const Hero: React.FC = () => {
         <div className="relative w-full max-w-xl mx-auto mt-[-5rem] md:mt-[-14vw] z-20 pointer-events-auto flex justify-center">
              <div className="group relative cursor-pointer">
                  <img 
-                    src="https://i.imgur.com/cKRZ2sb.png" 
-                    alt="Shea - Sibylhaus" 
+                src={bearAsset}                    alt="Shea - Sibylhaus" 
                     className="w-full h-auto object-contain max-h-[60vh]
                                filter grayscale contrast-[1.2] brightness-75
                                transition-all duration-700 ease-out
