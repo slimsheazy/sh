@@ -20,7 +20,8 @@ jobs:
           node-version: '20'
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3        with:
+      - uses: actions/upload-pages-artifact@v3  
+              with:
           path: dist
 
   deploy:
